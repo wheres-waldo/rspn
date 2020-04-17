@@ -3,10 +3,10 @@ use std::env;
 fn main() {
     let args: Vec<String> = env::args().collect();
     let calculation = &args[1..];
-    let mut stack: Vec<i32> = vec![];
+    let mut stack: Vec<f64> = vec![];
 
     calculation.iter().for_each(|arg| {
-        if let Ok(i) = arg.parse::<i32>() {
+        if let Ok(i) = arg.parse::<f64>() {
             stack.push(i);
         } else {
             match arg.as_bytes() {
