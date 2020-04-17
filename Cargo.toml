@@ -1,5 +1,5 @@
 [package]
-name = "rpn"
+name = "rspn"
 version = "0.1.0"
 authors = ["Steven Waldron <steven.waldron@protonmail.com>"]
 edition = "2018"
